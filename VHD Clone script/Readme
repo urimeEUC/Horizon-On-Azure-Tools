@@ -1,0 +1,9 @@
+VHD Clone Script
+
+preforms upload of VHD file exported from Hyper-V 
+based on those documents:
+https://docs.microsoft.com/en-us/azure/virtual-machines/windows/disks-upload-vhd-to-managed-disk-powershell
+
+needed Powershell modules:
+Az.Accounts
+Az.Compute
