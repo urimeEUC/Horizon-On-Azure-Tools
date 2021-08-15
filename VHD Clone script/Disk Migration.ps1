@@ -2,6 +2,8 @@
 $localfilepath = "C:\TEMP\azureTest.vhd"
 $ResourceGroup = "RG-Histadrut-IT"
 $diskname = "vhduploadtest"
+$tenantID = <TenantID>
+
 
 #$vhd = Get-VHD -Path $localfilepath
 #if (($vhd.Size % 1MB) -ne 0)
@@ -13,7 +15,7 @@ $diskname = "vhduploadtest"
 
 
 
-Connect-AzAccount -TenantID 759d202d-996d-4c97-8a86-4ade85fb1d47
+Connect-AzAccount -TenantID $tenantID
 
 $vhdSizeBytes = (Get-Item $localfilepath).length
 
